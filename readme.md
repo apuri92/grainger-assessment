@@ -33,6 +33,12 @@ Predictions can be made by sending a request to the model server in the followin
 url = 'http://localhost:5000/predict'
 r = requests.post(url,json={'Color':'BK', 'BodyStyle': 'PA', 'StatePlate': 'CA'})
 ```
+
+Running the `server.py` file returns a response as below:
+```sh
+{'prediction': 0.9189022476315752}
+```
+
 Note: The name of the input features may be different from the column name as specified in the csv provided.
 
 

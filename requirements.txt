@@ -7,4 +7,5 @@ scipy==1.9.1
 Flask==2.2.2
 requests==2.28.1
 runipy==0.1.5
-ipython
+ipython==8.4.0
+jupyter==1.0.0

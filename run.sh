@@ -14,6 +14,9 @@ fi
 echo "Installing required libraries"
 pip3 install -q -r requirements.txt
 
+# Make a folder for the plots
+mkdir ./plots
+
 # Run analysis
 echo "Starting analysis... Running Jupyter notebook. This can take time"
 jupyter nbconvert --execute --to notebook --inplace analysis.ipynb

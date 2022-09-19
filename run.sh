@@ -12,7 +12,7 @@ fi
 
 # Get libaries
 echo "Installing required libraries"
-pip install -q -r requirements.txt
+pip3 install -q -r requirements.txt
 
 # Run analysis
 echo "Starting analysis... Running Jupyter notebook. This can take time"
@@ -22,5 +22,3 @@ jupyter nbconvert --execute --to notebook --inplace analysis.ipynb
 # Start server
 echo "Starting server.. Open new terminal and send requests with requests.py"
 python ./server.py
-
-
